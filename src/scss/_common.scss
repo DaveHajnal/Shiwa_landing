@@ -1,0 +1,22 @@
+/*common-stylesheet*/
+
+//sass-lint:disable no-url-domains no-url-protocols
+@import url('https://fonts.googleapis.com/css?family=Cambo|Open+Sans:400,700|Yellowtail');
+
+.bg-black {
+  background-color: $color-black;
+}
+
+.bg-light-grey {
+  background-color: $color-light-grey;
+}
+
+.bg-grey {
+  background-color: $color-grey;
+}
+
+.footer {
+  min-height: 165px;
+}
+
+

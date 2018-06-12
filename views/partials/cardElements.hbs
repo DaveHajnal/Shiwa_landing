@@ -1,0 +1,16 @@
+{{!-card elements--}}
+
+<div class="container">
+    <div class="row">
+        {{#each cardElements}}
+            <div class="col-lg-3 col-sm-6">
+                <div class="card container">
+                    <h1 class="card__title">{{title}}</h1>
+                    <h2 class="card__sub-title">{{subTitle}}</h2>
+                    <p class="card__paragraph text-center">{{paragraph}}</p>
+                    <a href="{{buttonHref}}" class="button ">{{button}}</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

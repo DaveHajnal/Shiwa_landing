@@ -1,0 +1,77 @@
+/* card stylesheet */
+
+.col-lg-3:nth-child(odd) .card {
+  border-radius: 20px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -20% 0 30%;
+  padding: 2rem 0 1.5rem;
+  transition: .5s ease-in-out;
+  border-radius: 0 20px;
+  background-color: $color-off-white;
+  -webkit-box-reflect: below 10px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(95%, transparent) , to($color-mid-grey-transparent));
+
+
+  &:hover {
+    background-color: $color-grey;
+
+    .card__title,
+    .card__sub-title {
+      color: $color-white;
+    }
+
+    .card__paragraph {
+      color: $color-light-grey;
+    }
+
+    .button {
+      background-color: $color-light-grey;
+      color: $color-grey;
+      text-decoration: none;
+    }
+  }
+
+  &__title {
+    flex-grow: 1;
+    margin: 0;
+    color: $color-black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  &__sub-title {
+    flex-grow: 1;
+    color: $color-black;
+    font-family: 'Yellowtail', cursive;
+  }
+
+  &__paragraph {
+    flex-basis: 120px;
+    flex-grow: 1;
+    color: $color-mid-grey;
+    font-family: 'Open Sans', sans-serif;
+
+    &::first-line {
+      color: $color-light-blue;
+    }
+  }
+}
+
+.button {
+  flex-grow: 1;
+  margin: auto 0 0;
+  padding: 5px 30px;
+  transition: .5s ease-in-out;
+  border-radius: 50px;
+  background-color: $color-blue;
+  color: $color-white;
+  font-family: 'Cambo', serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+

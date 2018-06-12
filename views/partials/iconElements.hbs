@@ -1,0 +1,17 @@
+{{!--icon elements--}}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <ul class="social-link-container d-flex">
+                {{#each iconElements}}
+                <li class="social-icon">
+                    <a href="{{socialHref}}">
+                        <img src="{{iconSrc}}" alt="social Icon">
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

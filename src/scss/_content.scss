@@ -1,0 +1,11 @@
+/*content stylesheet*/
+
+.content {
+  border-radius: 30px;
+  background-color: $color-mid-grey-transparent;
+
+  &__paragraph {
+    padding: 20px;
+    color: $color-white;
+  }
+}

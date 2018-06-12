@@ -1,0 +1,25 @@
+/*jumbotron elements stylesheet*/
+
+.jumbo {
+  background-image: url('../../src/images/jumbotron.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    margin: 42% 0 0;
+    padding: 10px 0;
+    background-color: $color-black-transparent;
+    color: $color-white;
+    font-family: 'Cambo', serif;
+    font-size: 3.5rem;
+  }
+
+  &__sub-title {
+    margin: 0 0 40%;
+    padding: 10px 0;
+    background-color: $color-grey-transparent;
+    color: $color-white;
+    font-family: 'Cambo', serif;
+    font-size: 2.5rem;
+  }
+}
